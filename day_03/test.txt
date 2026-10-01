@@ -1,0 +1,19 @@
+Q1. == our ===
+== ya operator hamara pass strictly rules follow nahi karta or is operator ko use kar ka quirks bhot ata hain jaisa ka 1 == '1' to iska answer true ai ga or wo islia kun ki ya operator strict nahi ha or ya type follow nahi karta is lia trueresult dia lakin agar iski jaga hum ya === opertor use karain to ya hamain sahi result da ga kun ki ya strict ha or ya type follow  karta ha agar same question isa bhi dain lain operator ya laga dain jaisa ka 1 === '1' to iska answer ya false daga ya strict rules follow karta ha 
+
+Q2. && or || ya hamara pass logical opertors hain jinki madad sa hum decisions kar pata hain. && hamara pas is lia use hota ha ka agar condition ka both side true ho tab hi && chala ga jaisa ka real life example daita hun suppose mana kisi student sa kaha ka clerk office jao or wahan sa borad marker la kar ao ab wo student gaya clerk office or marker la kar aya to maira pas don conditions true ho gain or || tab kam karta ha ka dono conditions ma agar apki aik condition bhi true ho jai same example ab student clek office gaya marker la kar aya don conditions true hain ya student clerk office gaya marker nahi la kar aya tab bhi aik condition true ha ya student pas ka class sa direct marker la aya clerk office jana ka bajai tab bhi aik condition true ho gai.
+
+for(let i = 0; i <= 10; i++){
+  if(i % 2 === 0){
+    console.log(i);
+  }
+}
+
+table ma thead, tbody, or tfoot  hum islia use karta hain kun ki ya accessibility barhati ha or upar sa programmer ko pata chalta ha ka ya head ha or ya table ki body  or ya table ka footer ha jaisa ka website ma header main or footer hum seo or accessibilty ka lia use karta hain isi tarah hum table ma bhi use karta hain or iska sirf ya matlab nahi ka ya seo or accessibilty barhata hain balka hamain changes karna ma bhi asani hoti ha agar hamain kuch change karna ho to aram sa pata lag jata ha.
+
+
+let age = 22;
+if (age >= 20) console.log("Adult");
+else if (age >= 13 && age <= 19 ) console.log("Teenager");
+else console.log("Child");
+

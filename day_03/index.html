@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03 - Tables, Forms, Semantic</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="top">
+      <h1>Mujh Sa Rabta Karein</h1>
+      <nav>
+        <ul>
+          <li><a href="#shills-table">Skills</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Skills Table  -->
+      <section id="skills-table">
+        <h2>Meri Skills Table</h2>
+        <table>
+          <caption>Skills our Unki Proficiency</caption>
+          <thead>
+            <tr>
+              <th scope="col">Skill</th>
+              <th scope="col">Level</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML5</th>
+              <td>Intermediate</td>
+              <td>Seekh raha hoon</td>
+            </tr>
+            <tr>
+              <th scope="row">Git & Github</th>
+              <td>Beginner</td>
+              <td>Seekh raha hoon</td>
+            </tr>
+            <tr>
+              <th scope="row">JavaScript</th>
+              <td>-</td>
+              <td>Agle mahine</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr>
+
+      <!-- Contact Section  -->
+      <section id="contact-form">
+        <h2>Contact Form</h2>
+
+        <!-- Form -->
+        <form action="/submit" method="POST">
+
+          <!-- Personel Info -->
+          <fieldset>
+            <legend>Personel Info</legend>
+
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="abc@example.com" required>
+            </p>
+
+            <p>
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="03XXXXXXXXX" required>
+            </p>
+
+            <p>
+              <label for="age">Umar:</label>
+              <input type="number" name="age" id="age" min="10" max="100">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Skills Selection</legend>
+
+            <!-- CheckBox -->
+            <p>
+              <input type="checkbox" name="skills" id="skill-html" value="html">
+              <label for="skill-html">HTML</label>
+            </p>
+            <p>
+              <input type="checkbox" name="skills" id="skill-css" value="html">
+              <label for="skill-css">CSS</label>
+            </p>
+            <p>
+              <input type="checkbox" name="skills" id="skill-js" value="html">
+              <label for="skill-js">JavaScript</label>
+            </p>
+
+            <!-- Gender -->
+            <p>Gender:</p>
+            <p>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Mard</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Aurat</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Extra</legend>
+
+            <!-- DropDown -->
+            <p>
+              <label for="city">Shehar:</label>
+              <select name="city" id="city">
+                <option value="">-- Chuno --</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="multan">Multan</option>
+              </select>
+            </p>
+
+            <!-- TextArea -->
+            <p>
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" rows="5" cols="40" placeholder="Apna message likhein..."></textarea>
+            </p>
+          </fieldset>
+
+          <!-- Buttons -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+
+        </form>
+      </section>
+      <hr>
+
+      <!-- FAQ with Details  -->
+      <section id="faq">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Full Stack Engineer banne mein kitna time lagta hai?</summary>
+          <p>8 se 12 mahine, agar rozana 4-5 ghante consistently kaam karein.</p>
+        </details>
+
+        <details>
+          <summary>Sab se pehle kya seekhna chahiye?</summary>
+          <p>HTML, phir CSS, phir JavaScript. Uske baad React aur backend.</p>
+        </details>
+
+        <details>
+          <summary>Kya AI developer ki jagah le lega?</summary>
+          <p>Nahi. AI tools productivity barhate hain. Jo developer AI use kar sake, woh aage rahega.</p>
+        </details>
+
+      </section>
+      <hr>
+
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+      <p>&copy; 2026 Abu Bakar. All rights reserved.</p>
+      <p><a href="#top">Upar Jao ^</a></p>
+    </footer>
+  </body>
+</html>
